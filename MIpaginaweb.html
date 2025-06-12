@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recomendados Pro</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f6f6f6;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f2937, #3b82f6);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #3b82f6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 1.2rem;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #111827;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #3b82f6;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1f2937;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Recomendados Pro</h1>
+    <p>Descubre los mejores productos, cursos y herramientas online</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Tecnología</a>
+    <a href="#">Cursos</a>
+    <a href="#">Apps útiles</a>
+    <a href="#">Blog</a>
+  </nav>
+
+  <main class="container">
+    <!-- Tarjeta 1 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200?text=Curso+de+Diseño" alt="Curso Diseño">
+      <div class="content">
+        <h3>Curso de Diseño Gráfico en Domestika</h3>
+        <p>Aprende a diseñar desde cero con herramientas pro. Curso recomendado para creativos.</p>
+        <a href="#" class="btn">Ver curso</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200?text=Auriculares" alt="Auriculares">
+      <div class="content">
+        <h3>Mejores Auriculares Calidad-Precio [2025]</h3>
+        <p>Comparativa completa con los mejores auriculares por menos de 50€ que puedes comprar en Amazon.</p>
+        <a href="#" class="btn">Ver en Amazon</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200?text=Apps+de+Estudio" alt="Apps de estudio">
+      <div class="content">
+        <h3>Top 5 Apps para Estudiar Mejor</h3>
+        <p>Herramientas que te ayudan a concentrarte, organizarte y mejorar tu aprendizaje digital.</p>
+        <a href="#" class="btn">Descubrir apps</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Recomendados Pro. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
